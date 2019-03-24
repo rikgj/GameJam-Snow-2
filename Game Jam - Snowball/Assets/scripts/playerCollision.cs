@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerCollision : MonoBehaviour {
+public class PlayerCollision : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public PlayerMovement movement;
+    public Rigidbody rb;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "Obstacle")
+        {
+            movement.enabled = false;
+            rb.AddForce(500,1000,300);
+            rb.useGravity = false;
+            FindObjectOfType<GameManager>().EndGame();
+        }
+    }
+
 }
