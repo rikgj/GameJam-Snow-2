@@ -268,7 +268,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 463913982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 153.5, y: 163, z: 0}
+  m_LocalPosition: {x: 164.5, y: 163, z: 0}
   m_LocalScale: {x: 0.54333335, y: 0.54333335, z: 0.54333335}
   m_Children:
   - {fileID: 740564938}
@@ -665,7 +665,7 @@ GameObject:
   - component: {fileID: 1183783368}
   - component: {fileID: 1183783367}
   m_Layer: 5
-  m_Name: Names
+  m_Name: text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -721,7 +721,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Solveig\nRikard\nAnnika\nH\xE5vard\n"
+  m_Text: Takk for at du spilte
 --- !u!222 &1183783368
 CanvasRenderer:
   m_ObjectHideFlags: 0
