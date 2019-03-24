@@ -62,17 +62,14 @@ public class PlayerMovement : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        Vector3 direction = new Vector3(cam.transform.position.x,0,cam.transform.position.y);
-
-        float x = transform.position.x;
-        float y = transform.position.y;
-        float z = transform.position.z;
+        //Vector3 direction = transform.position - cam.transform.position;
+        //direction = new Vector3(direction.x, 0, direction.z);
+        //direction.Normalize();
 
         if (moveForward)
         {
-            
-            //rb.AddForce((direction.x-x*Time.deltaTime),0,(direction.z - z + forwardForce * Time.deltaTime));
             rb.AddForce(0,0, forwardForce*Time.deltaTime);
+            //rb.AddForce(direction * forwardForce*Time.deltaTime);
         }
 
         if (moveBackward)
