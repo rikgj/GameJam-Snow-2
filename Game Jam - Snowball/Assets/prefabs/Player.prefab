@@ -126,9 +126,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 54359657070489328}
-  forwardForce: 2000
-  backwardForce: 700
-  sidewaysForce: 800
+  cam: {fileID: 0}
+  forwardForce: 1000
+  backwardForce: 750
+  sidewaysForce: 500
 --- !u!135 &135903743035304550
 SphereCollider:
   m_ObjectHideFlags: 1
