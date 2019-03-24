@@ -5,10 +5,11 @@ using UnityEngine;
 public class EndTrigger : MonoBehaviour {
 
     public GameManager gameManager;
+    public PlayerMovement movement;
 
     void OnTriggerEnter()
     {
-        Debug.Log("EndTrigger");
+        movement.enabled = false;
         gameManager.CompleteLevel();
     }
 }
